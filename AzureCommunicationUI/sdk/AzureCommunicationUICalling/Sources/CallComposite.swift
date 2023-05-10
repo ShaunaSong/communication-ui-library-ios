@@ -255,4 +255,11 @@ public class CallComposite {
 
         return !hasCallComposite
     }
+    
+    public func callObject() -> Call {
+        return CallingSDKWrapper.getCall()
+    }
+    public func pipSurfaceView() -> {
+        return LocalPa
+    }
 }

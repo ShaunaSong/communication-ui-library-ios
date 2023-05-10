@@ -37,6 +37,10 @@ class CallingSDKWrapper: NSObject, CallingSDKWrapperProtocol {
     func setupCall() async throws {
         try await setupCallClientAndDeviceManager()
     }
+    
+    func getCall() -> Call {
+        return self.call
+    }
 
     func startCall(isCameraPreferred: Bool, isAudioPreferred: Bool) async throws {
         logger.debug("Reset Subjects in callingEventsHandler")

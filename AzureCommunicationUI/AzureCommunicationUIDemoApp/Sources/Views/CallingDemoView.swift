@@ -17,6 +17,7 @@ struct CallingDemoView: View {
     @State var isStartExperienceLoading: Bool = false
     @State var alertTitle: String = ""
     @State var alertMessage: String = ""
+    @State var rawOutgoingVideoStream: RawOutgoingVideoStream?
     @ObservedObject var envConfigSubject: EnvConfigSubject
     @ObservedObject var callingViewModel: CallingDemoViewModel
 
