@@ -37,7 +37,7 @@ class CallingSDKWrapper: NSObject, CallingSDKWrapperProtocol {
     func setupCall() async throws {
         try await setupCallClientAndDeviceManager()
     }
-    
+
     func getCall() -> Call {
         return self.call
     }
